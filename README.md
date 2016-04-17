@@ -1,4 +1,4 @@
-# libcommand - Command Line parser for C
+# `libcommand` - Command Line parser for C
 
 libcommand is a simple command line parser for C. You simply create an array of command handlers with associated names, and then call `command_run` with your 
 input line (presumably from readline or gets), the command array, and an optional extra data parameter and watch the magic happen.
