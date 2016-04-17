@@ -2,7 +2,7 @@
 * @Author: caleb
 * @Date:   2016-04-17 15:38:51
 * @Last Modified by:   caleb
-* @Last Modified time: 2016-04-17 15:57:46
+* @Last Modified time: 2016-04-17 16:59:32
 */
 #include "command.h"
 #include <stdio.h>
@@ -48,7 +48,7 @@ int command_run(char* line, command_t* cmd, void* data)
 			break;
 		}
 	}
-	if( cmd[i].name == NULL ){
+	if( cmd[i].run == NULL ){
 		errno = EINVAL;
 		return -1;
 	}
